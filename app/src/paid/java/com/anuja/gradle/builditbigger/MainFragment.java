@@ -17,7 +17,7 @@ import com.anuja.androidlib.ActivityJoke;
 
 public class MainFragment extends Fragment {
 
-    Button btnJoke;
+    Button BtnJoke;
     private String mJoke;
 
 
@@ -25,9 +25,9 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
-        btnJoke = (Button) root.findViewById(R.id.joke_button);
+        BtnJoke = (Button) root.findViewById(R.id.joke_button);
 
-        btnJoke.setOnClickListener(new View.OnClickListener() {
+        BtnJoke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 fetchJokeTask();
