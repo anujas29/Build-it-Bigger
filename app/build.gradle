@@ -9,6 +9,9 @@ android {
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
+
+        //To set AndroidJUnitRunner as default test instrumentation runner
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -42,6 +45,12 @@ dependencies {
     testCompile 'junit:junit:4.12'
     freeCompile 'com.google.android.gms:play-services-ads:10.2.4'
     compile project(path: ':backend', configuration: 'android-endpoints')
+
+    androidTestCompile('com.android.support.test:runner:0.4', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
 
 
 }
