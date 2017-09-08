@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ActivityJoke</string>
+    <string name="desc_joke">funny image</string>
 </resources>
