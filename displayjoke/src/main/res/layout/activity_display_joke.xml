@@ -3,28 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingBottom="1dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="1dp"
     tools:context="com.anuja.androidlib.ActivityJoke"
     >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/funnyFace"
-        android:id="@+id/funnyFaceimage"
+        android:id="@+id/funnyfaceimage"
+        android:src="@drawable/laughoutloud"
         android:contentDescription="@string/desc_joke"
         />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/funnyfaceimage">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/funnyFaceimage"
+
         android:layout_marginTop="5dp"
         android:textSize="18sp"
         android:id="@+id/txtJoke"
         android:textColor="@android:color/black"
         />
+    </ScrollView>
 </RelativeLayout>

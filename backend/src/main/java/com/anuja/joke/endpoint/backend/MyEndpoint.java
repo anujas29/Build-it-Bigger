@@ -42,7 +42,7 @@ public class MyEndpoint {
 //        response.setData(JokeProvider.getJoke());
 //        return response;
 
-        JokeProvider obj = new JokeProvider();
+                JokeProvider obj = new JokeProvider();
         MyBean response = new MyBean();
         response.setData(obj.GetJoke());
         return response;
