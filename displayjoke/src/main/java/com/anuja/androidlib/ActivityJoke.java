@@ -15,7 +15,6 @@ public class ActivityJoke extends AppCompatActivity {
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.println("----------------- inside  onCreate ---------------------");
         setContentView(R.layout.activity_display_joke);
 
         getSupportActionBar().setTitle("JOKE");

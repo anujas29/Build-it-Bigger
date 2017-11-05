@@ -71,7 +71,6 @@ public class MainFragment extends Fragment {
                 if(joke!=null)
                 {
                     Log.d("Inside fetchJokeTask",joke);
-                    System.out.println("----------------- inside  fetchJokeTask---------------------");
                     if(mInterstitialAd.isLoaded())
                     {
                         mInterstitialAd.show();
@@ -81,9 +80,7 @@ public class MainFragment extends Fragment {
                         StartActivityJoke(mJoke);
                     }
                 }
-                else {
-                    System.out.println("----------------- inside  fetchJokeTask null---------------------"+mJoke);
-                }
+
             }
         });
 
@@ -92,8 +89,6 @@ public class MainFragment extends Fragment {
 
     private void StartActivityJoke(String joke){
         Intent mIntent = new Intent(getActivity(),ActivityJoke.class);
-
-        System.out.println("----------------- inside  StartActivityJoke---------------------"+joke);
         mIntent.putExtra("JOKE",joke);
         startActivity(mIntent);
     }

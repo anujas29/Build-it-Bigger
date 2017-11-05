@@ -25,24 +25,10 @@ import com.google.api.server.spi.config.ApiNamespace;
 )
 public class MyEndpoint {
 
-    /**
-     * A simple endpoint method that takes a name and says Hi back
-     */
-//    @ApiMethod(name = "sayHi")
-//    public MyBean sayHi(@Named("name") String name) {
-//        MyBean response = new MyBean();
-//        response.setData("Hi, " + name);
-//
-//        return response;
-
-    //A simple endpoints method that provide a joke
+        //A simple endpoints method that provide a joke
     @ApiMethod(name = "getJoke")
     public MyBean getJoke(){
-//        MyBean response = new MyBean();
-//        response.setData(JokeProvider.getJoke());
-//        return response;
-
-                JokeProvider obj = new JokeProvider();
+        JokeProvider obj = new JokeProvider();
         MyBean response = new MyBean();
         response.setData(obj.GetJoke());
         return response;
